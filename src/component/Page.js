@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link } from 'react-router-dom';
 import '../App.css'
 const Page = () => {
   const [m00,setM00]=React.useState("0");
@@ -113,6 +112,118 @@ const Page = () => {
    
 
   ]
+  let grid1 = [ [ 3, 0, 6, 5, 0, 8, 4, 0, 0 ],
+			[ 5, 2, 0, 0, 0, 0, 0, 0, 0 ],
+			[ 0, 8, 7, 0, 0, 0, 0, 3, 1 ],
+			[ 0, 0, 3, 0, 1, 0, 0, 8, 0 ],
+			[ 9, 0, 0, 8, 6, 3, 0, 0, 5 ],
+			[ 0, 5, 0, 0, 9, 0, 6, 0, 0 ],
+			[ 1, 3, 0, 0, 0, 0, 2, 5, 0 ],
+			[ 0, 0, 0, 0, 0, 0, 0, 7, 4 ],
+			[ 0, 0, 5, 2, 0, 6, 3, 0, 0 ] ]
+
+      
+  
+  const handel =()=>{
+    setM00(grid1[0][0]);
+  setM01(grid1[0][1]);
+  setM02(grid1[0][2]);
+  setM03(grid1[0][3]);
+  setM04(grid1[0][4]);
+  setM05(grid1[0][5]);
+  setM06(grid1[0][6]);
+  setM07(grid1[0][7]);
+  setM08(grid1[0][8]);
+
+  //Second row:
+  setM10(grid1[1][0]);
+  setM11(grid1[1][1]);
+  setM12(grid1[1][2]);
+  setM13(grid1[1][3]);
+  setM14(grid1[1][4]);
+  setM15(grid1[1][5]);
+  setM16(grid1[1][6]);
+  setM17(grid1[1][7]);
+  setM18(grid1[1][8]);
+
+  //Third row:
+  setM20(grid1[2][0]);
+  setM21(grid1[2][1]);
+  setM22(grid1[2][2]);
+  setM23(grid1[2][3]);
+  setM24(grid1[2][4]);
+  setM25(grid1[2][5]);
+  setM26(grid1[2][6]);
+  setM27(grid1[2][7]);
+  setM28(grid1[2][8]);
+
+  //Fourth row:
+  setM30(grid1[3][0]);
+  setM31(grid1[3][1]);
+  setM32(grid1[3][2]);
+  setM33(grid1[3][3]);
+  setM34(grid1[3][4]);
+  setM35(grid1[3][5]);
+  setM36(grid1[3][6]);
+  setM37(grid1[3][7]);
+  setM38(grid1[3][8]);
+
+  //Fifth row:
+  setM40(grid1[4][0]);
+  setM41(grid1[4][1]);
+  setM42(grid1[4][2]);
+  setM43(grid1[4][3]);
+  setM44(grid1[4][4]);
+  setM45(grid1[4][5]);
+  setM46(grid1[4][6]);
+  setM47(grid1[4][7]);
+  setM48(grid1[4][8]);
+
+  //Sixth row:
+  setM50(grid1[5][0]);
+  setM51(grid1[5][1]);
+  setM52(grid1[5][2]);
+  setM53(grid1[5][3]);
+  setM54(grid1[5][4]);
+  setM55(grid1[5][5]);
+  setM56(grid1[5][6]);
+  setM57(grid1[5][7]);
+  setM58(grid1[5][8]);
+
+  //Seventh row:
+  setM60(grid1[6][0]);
+  setM61(grid1[6][1]);
+  setM62(grid1[6][2]);
+  setM63(grid1[6][3]);
+  setM64(grid1[6][4]);
+  setM65(grid1[6][5]);
+  setM66(grid1[6][6]);
+  setM67(grid1[6][7]);
+  setM68(grid1[6][8]);
+
+  //Eight row:
+  setM70(grid1[7][0]);
+  setM71(grid1[7][1]);
+  setM72(grid1[7][2]);
+  setM73(grid1[7][3]);
+  setM74(grid1[7][4]);
+  setM75(grid1[7][5]);
+  setM76(grid1[7][6]);
+  setM77(grid1[7][7]);
+  setM78(grid1[7][8]);
+
+  //Ninth row:
+  setM80(grid1[8][0]);
+  setM81(grid1[8][1]);
+  setM82(grid1[8][2]);
+  setM83(grid1[8][3]);
+  setM84(grid1[8][4]);
+  setM85(grid1[8][5]);
+  setM86(grid1[8][6]);
+  setM87(grid1[8][7]);
+  setM88(grid1[8][8]);
+  
+  }
   // const [grid, setGrid] = useState(predefinedGrid);
   const magic =()=>{
 
@@ -178,28 +289,116 @@ function isSafe(grid, row, col, num)
 	return true;
 }
 
-// Driver Code
-// let grid = [ [ 3, 0, 6, 5, 0, 8, 4, 0, 0 ],
-// 			[ 5, 2, 0, 0, 0, 0, 0, 0, 0 ],
-// 			[ 0, 8, 7, 0, 0, 0, 0, 3, 1 ],
-// 			[ 0, 0, 3, 0, 1, 0, 0, 8, 0 ],
-// 			[ 9, 0, 0, 8, 6, 3, 0, 0, 5 ],
-// 			[ 0, 5, 0, 0, 9, 0, 6, 0, 0 ],
-// 			[ 1, 3, 0, 0, 0, 0, 2, 5, 0 ],
-// 			[ 0, 0, 0, 0, 0, 0, 0, 7, 4 ],
-// 			[ 0, 0, 5, 2, 0, 6, 3, 0, 0 ] ]
 
-if (solveSudoku(grid, 0, 0)){
-  console.log("Successfull");
+
+
+if (solveSudoku(grid, 0, 0) ) {
+  console.log("Successful");
   console.log(grid);
+  //  setM00(grid[0][0]);
+  //First row:
+  setM00(grid[0][0]);
+  setM01(grid[0][1]);
+  setM02(grid[0][2]);
+  setM03(grid[0][3]);
+  setM04(grid[0][4]);
+  setM05(grid[0][5]);
+  setM06(grid[0][6]);
+  setM07(grid[0][7]);
+  setM08(grid[0][8]);
 
+  //Second row:
+  setM10(grid[1][0]);
+  setM11(grid[1][1]);
+  setM12(grid[1][2]);
+  setM13(grid[1][3]);
+  setM14(grid[1][4]);
+  setM15(grid[1][5]);
+  setM16(grid[1][6]);
+  setM17(grid[1][7]);
+  setM18(grid[1][8]);
+
+  //Third row:
+  setM20(grid[2][0]);
+  setM21(grid[2][1]);
+  setM22(grid[2][2]);
+  setM23(grid[2][3]);
+  setM24(grid[2][4]);
+  setM25(grid[2][5]);
+  setM26(grid[2][6]);
+  setM27(grid[2][7]);
+  setM28(grid[2][8]);
+
+  //Fourth row:
+  setM30(grid[3][0]);
+  setM31(grid[3][1]);
+  setM32(grid[3][2]);
+  setM33(grid[3][3]);
+  setM34(grid[3][4]);
+  setM35(grid[3][5]);
+  setM36(grid[3][6]);
+  setM37(grid[3][7]);
+  setM38(grid[3][8]);
+
+  //Fifth row:
+  setM40(grid[4][0]);
+  setM41(grid[4][1]);
+  setM42(grid[4][2]);
+  setM43(grid[4][3]);
+  setM44(grid[4][4]);
+  setM45(grid[4][5]);
+  setM46(grid[4][6]);
+  setM47(grid[4][7]);
+  setM48(grid[4][8]);
+
+  //Sixth row:
+  setM50(grid[5][0]);
+  setM51(grid[5][1]);
+  setM52(grid[5][2]);
+  setM53(grid[5][3]);
+  setM54(grid[5][4]);
+  setM55(grid[5][5]);
+  setM56(grid[5][6]);
+  setM57(grid[5][7]);
+  setM58(grid[5][8]);
+
+  //Seventh row:
+  setM60(grid[6][0]);
+  setM61(grid[6][1]);
+  setM62(grid[6][2]);
+  setM63(grid[6][3]);
+  setM64(grid[6][4]);
+  setM65(grid[6][5]);
+  setM66(grid[6][6]);
+  setM67(grid[6][7]);
+  setM68(grid[6][8]);
+
+  //Eight row:
+  setM70(grid[7][0]);
+  setM71(grid[7][1]);
+  setM72(grid[7][2]);
+  setM73(grid[7][3]);
+  setM74(grid[7][4]);
+  setM75(grid[7][5]);
+  setM76(grid[7][6]);
+  setM77(grid[7][7]);
+  setM78(grid[7][8]);
+
+  //Ninth row:
+  setM80(grid[8][0]);
+  setM81(grid[8][1]);
+  setM82(grid[8][2]);
+  setM83(grid[8][3]);
+  setM84(grid[8][4]);
+  setM85(grid[8][5]);
+  setM86(grid[8][6]);
+  setM87(grid[8][7]);
+  setM88(grid[8][8]);
+  
+
+} else {
+  console.log("No solution exists!");
 }
-else
-	console.log("no solution exists ");
-
-// This code is contributed by rag2127
-
-
 
 }
 
@@ -210,11 +409,11 @@ else
 
   <div class='main-box'>
  
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m00}  onChange={(e)=>{setM00(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m01}  onChange={(e)=>{setM01(e.target.value)}}/></div>
-<div class="white bdright"><input class="cell" type="text"
+<div class="green bdright"><input class="cell g1" type="text"
  value={m02}  onChange={(e)=>{setM02(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
  value={m03}  onChange={(e)=>{setM03(e.target.value)}}/></div>
@@ -222,18 +421,18 @@ else
  value={m04}  onChange={(e)=>{setM04(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
  value={m05}  onChange={(e)=>{setM05(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green "><input class="cell g1" type="text"
  value={m06}  onChange={(e)=>{setM06(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red "><input class="cell r1" type="text"
  value={m07}  onChange={(e)=>{setM07(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green "><input class="cell g1" type="text"
  value={m08}  onChange={(e)=>{setM08(e.target.value)}}/></div>
 
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m10}  onChange={(e)=>{setM10(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
 value={m11}  onChange={(e)=>{setM11(e.target.value)}}/></div>
-<div class="black bdright"><input class="cell b1" type="text"
+<div class="red bdright"><input class="cell r1" type="text"
 value={m12}  onChange={(e)=>{setM12(e.target.value)}}/></div>
 <div class="white"><input class="cell" type="text"
 value={m13}  onChange={(e)=>{setM13(e.target.value)}}/></div>
@@ -241,18 +440,18 @@ value={m13}  onChange={(e)=>{setM13(e.target.value)}}/></div>
 value={m14}  onChange={(e)=>{setM14(e.target.value)}}/></div>
 <div class="white bdright"><input class="cell" type="text"
 value={m15}  onChange={(e)=>{setM15(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m16}  onChange={(e)=>{setM16(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
 value={m17}  onChange={(e)=>{setM17(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m18}  onChange={(e)=>{setM18(e.target.value)}}/></div>
 
-<div class="white"><input class="cell" type="text"
+<div class="green "><input class="cell g1" type="text"
  value={m20}  onChange={(e)=>{setM20(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m21}  onChange={(e)=>{setM21(e.target.value)}}/></div>
-<div class="white bdright"><input class="cell" type="text"
+<div class="green bdright"><input class="cell g1" type="text"
  value={m22}  onChange={(e)=>{setM22(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
  value={m23}  onChange={(e)=>{setM23(e.target.value)}}/></div>
@@ -260,11 +459,11 @@ value={m18}  onChange={(e)=>{setM18(e.target.value)}}/></div>
  value={m24}  onChange={(e)=>{setM24(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
  value={m25}  onChange={(e)=>{setM25(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m26}  onChange={(e)=>{setM26(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m27}  onChange={(e)=>{setM27(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m28}  onChange={(e)=>{setM28(e.target.value)}}/></div>
 
 <div class="black"><input class="cell b1" type="text"
@@ -273,11 +472,11 @@ value={m30}  onChange={(e)=>{setM30(e.target.value)}}/></div>
 value={m31}  onChange={(e)=>{setM31(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
 value={m32}  onChange={(e)=>{setM32(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
 value={m33}  onChange={(e)=>{setM33(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m34}  onChange={(e)=>{setM34(e.target.value)}}/></div>
-<div class="white bdright"><input class="cell" type="text"
+<div class="green bdright"><input class="cell g1" type="text"
 value={m35}  onChange={(e)=>{setM35(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
 value={m36}  onChange={(e)=>{setM36(e.target.value)}}/></div>
@@ -292,11 +491,11 @@ value={m38}  onChange={(e)=>{setM38(e.target.value)}}/></div>
  value={m41}  onChange={(e)=>{setM41(e.target.value)}}/></div>
 <div class="white bdright"><input class="cell" type="text"
  value={m42}  onChange={(e)=>{setM42(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m43}  onChange={(e)=>{setM43(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m44}  onChange={(e)=>{setM44(e.target.value)}}/></div>
-<div class="black bdright"><input class="cell b1" type="text"
+<div class="red bdright"><input class="cell r1" type="text"
  value={m45}  onChange={(e)=>{setM45(e.target.value)}}/></div>
 <div class="white"><input class="cell" type="text"
  value={m46}  onChange={(e)=>{setM46(e.target.value)}}/></div>
@@ -311,11 +510,11 @@ value={m50}  onChange={(e)=>{setM50(e.target.value)}}/></div>
 value={m51}  onChange={(e)=>{setM51(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
 value={m52}  onChange={(e)=>{setM52(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
 value={m53}  onChange={(e)=>{setM53(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m54}  onChange={(e)=>{setM54(e.target.value)}}/></div>
-<div class="white bdright"><input class="cell" type="text"
+<div class="green bdright"><input class="cell g1" type="text"
 value={m55}  onChange={(e)=>{setM55(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
 value={m56}  onChange={(e)=>{setM56(e.target.value)}}/></div>
@@ -324,11 +523,11 @@ value={m57}  onChange={(e)=>{setM57(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
 value={m18}  onChange={(e)=>{setM58(e.target.value)}}/></div>
 
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m60}  onChange={(e)=>{setM60(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m61}  onChange={(e)=>{setM61(e.target.value)}}/></div>
-<div class="white bdright"><input class="cell" type="text"
+<div class="green bdright"><input class="cell g1" type="text"
  value={m62}  onChange={(e)=>{setM62(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
  value={m63}  onChange={(e)=>{setM63(e.target.value)}}/></div>
@@ -336,18 +535,18 @@ value={m18}  onChange={(e)=>{setM58(e.target.value)}}/></div>
  value={m64}  onChange={(e)=>{setM64(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
  value={m65}  onChange={(e)=>{setM65(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m66}  onChange={(e)=>{setM66(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m67}  onChange={(e)=>{setM67(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m68}  onChange={(e)=>{setM68(e.target.value)}}/></div>
 
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m70}  onChange={(e)=>{setM70(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
 value={m71}  onChange={(e)=>{setM71(e.target.value)}}/></div>
-<div class="black bdright"><input class="cell b1" type="text"
+<div class="red bdright"><input class="cell r1" type="text"
 value={m72}  onChange={(e)=>{setM72(e.target.value)}}/></div>
 <div class="white"><input class="cell" type="text"
 value={m73}  onChange={(e)=>{setM73(e.target.value)}}/></div>
@@ -355,18 +554,18 @@ value={m73}  onChange={(e)=>{setM73(e.target.value)}}/></div>
 value={m74}  onChange={(e)=>{setM74(e.target.value)}}/></div>
 <div class="white bdright"><input class="cell" type="text"
 value={m75}  onChange={(e)=>{setM75(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m76}  onChange={(e)=>{setM76(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
 value={m77}  onChange={(e)=>{setM77(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
 value={m78}  onChange={(e)=>{setM78(e.target.value)}}/></div>
 
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m80}  onChange={(e)=>{setM80(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m61}  onChange={(e)=>{setM81(e.target.value)}}/></div>
-<div class="white bdright"><input class="cell" type="text"
+<div class="green bdright"><input class="cell g1" type="text"
  value={m82}  onChange={(e)=>{setM82(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
  value={m83}  onChange={(e)=>{setM83(e.target.value)}}/></div>
@@ -374,16 +573,17 @@ value={m78}  onChange={(e)=>{setM78(e.target.value)}}/></div>
  value={m84}  onChange={(e)=>{setM84(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
  value={m85}  onChange={(e)=>{setM85(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m86}  onChange={(e)=>{setM86(e.target.value)}}/></div>
-<div class="black"><input class="cell b1" type="text"
+<div class="red"><input class="cell r1" type="text"
  value={m87}  onChange={(e)=>{setM87(e.target.value)}}/></div>
-<div class="white"><input class="cell" type="text"
+<div class="green"><input class="cell g1" type="text"
  value={m88}  onChange={(e)=>{setM88(e.target.value)}}/></div>
 
-<button onClick={magic}>Submit</button>
 
    </div>
+<button style={{margin:"13px",padding:"5px",paddingLeft:"10px",paddingRight:"10px",marginLeft:"30%",color:"green"}}  onClick={magic}>Generate Answer</button>
+<button style={{margin:"13px",padding:"5px",paddingLeft:"10px",paddingRight:"10px",marginLeft:"25%"}} onClick={handel}>Generate Random</button>
 
   </>
     )

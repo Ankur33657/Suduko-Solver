@@ -5,7 +5,7 @@
   margin-top: 30px;
   width: 630px;
     height: 630px;
-    border: 25px solid #333;
+    border: 10px solid #333;
    
 }
 .black {
@@ -28,6 +28,26 @@
     display: table-cell;
     vertical-align:middle;
 }
+.green {
+  float: left;
+  width: 69px;
+  height: 69px;
+  background-color: #5fe888;
+  font-size:50px;
+  text-align:center;
+  display: table-cell;
+  vertical-align:middle;
+}
+.red {
+  float: left;
+  width: 69px;
+  height: 69px;
+  background-color: #f56d6d;
+  font-size:50px;
+  text-align:center;
+  display: table-cell;
+  vertical-align:middle;
+}
 .cell{
     border: none;
     width:40px;
@@ -41,10 +61,16 @@
     background-color: #999;
     
 }
+.g1{
+  background-color: #5fe888;
+}
+.r1{
+  background-color: #f56d6d;
+}
 .bdright{
   border-right: 4.5px solid black;
 }
 .bddown{
-    border-bottom: 4.5px solid black;
+    border-bottom: 1.5px solid black;
     
 }
