@@ -510,7 +510,7 @@ value={m50}  onChange={(e)=>{setM50(e.target.value)}}/></div>
 value={m51}  onChange={(e)=>{setM51(e.target.value)}}/></div>
 <div class="black bdright"><input class="cell b1" type="text"
 value={m52}  onChange={(e)=>{setM52(e.target.value)}}/></div>
-<div class="green"><input class="cell g1" type="text"
+<div  class="green"><input class="cell g1" type="text"
 value={m53}  onChange={(e)=>{setM53(e.target.value)}}/></div>
 <div class="red"><input class="cell r1" type="text"
 value={m54}  onChange={(e)=>{setM54(e.target.value)}}/></div>
@@ -521,7 +521,7 @@ value={m56}  onChange={(e)=>{setM56(e.target.value)}}/></div>
 <div class="white"><input class="cell" type="text"
 value={m57}  onChange={(e)=>{setM57(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
-value={m18}  onChange={(e)=>{setM58(e.target.value)}}/></div>
+value={m58}  onChange={(e)=>{setM58(e.target.value)}}/></div>
 
 <div class="green"><input class="cell g1" type="text"
  value={m60}  onChange={(e)=>{setM60(e.target.value)}}/></div>
@@ -564,7 +564,7 @@ value={m78}  onChange={(e)=>{setM78(e.target.value)}}/></div>
 <div class="green"><input class="cell g1" type="text"
  value={m80}  onChange={(e)=>{setM80(e.target.value)}}/></div>
 <div class="red"><input class="cell r1" type="text"
- value={m61}  onChange={(e)=>{setM81(e.target.value)}}/></div>
+ value={m81}  onChange={(e)=>{setM81(e.target.value)}}/></div>
 <div class="green bdright"><input class="cell g1" type="text"
  value={m82}  onChange={(e)=>{setM82(e.target.value)}}/></div>
 <div class="black"><input class="cell b1" type="text"
